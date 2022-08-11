@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Montserrat:wght@800&family=Outfit:wght@700&family=Overpass:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Montserrat:wght@800&family=Outfit:wght@700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family:'Overpass', sans-serif;
+}
+
+body{
+    margin:0;
+    padding:0;
+}
+
+nav{
+display:flex;
+justify-content: space-between;
+align-items: center;
+padding:2em 7em;
+}
+.nav-items{
+    display: flex;
+    gap:4em;
+    min-height:6.8em;
+    
+}
+
+.login{    
+    display: flex;
+    gap:3.5em;
+    align-items: center;
+}
+
+.foot{
+    display: flex;
+    flex-direction: column;
+    gap:2.5em;
+    align-items: center;
+}
+
+.foot-link{
+    display:flex;
+    flex-direction: column;
+    gap:1em;
+}
+
+.head{
+    font-weight: 700;
+}
+
+li, a, button{
+    font-family:'Ubuntu', sans-serif;
+    font-size:1em;
+    color: white;
+    text-decoration: none;
+    list-style-type:none;
+}
+
+li a:hover{
+    text-shadow: 0px 0px 7px white;
+    transition:0.2s;
+}
+
+button{
+    padding:0.75em 1.5em;
+    background-color:white;
+    border-radius:30px;
+    color:#ff3d54;
+    font-family:'Ubuntu', sans-serif;
+    font-weight:700;
+    border:none;
+}
+
+button:hover{
+    box-shadow: 0px 0px 8px white;
+    transition:0.3s;
+}
+
+.welcome-section{
+    min-height:37rem;
+   background-image:linear-gradient(to bottom, rgba(255,143,112,95%), rgba(255,61,84,98%)),
+    url('./images/bg-pattern-intro-desktop.svg');
+    mask-image:url('./images/bg-pattern-intro-desktop.svg'), hsl(353, 100%, 62%);
+    background-size:170em;
+    background-repeat: no-repeat;
+    background-position:left;
+    background-attachment: fixed;
+    max-width: 100%;   
+    border-bottom-left-radius:100px;
+}
+
+.home-wrapper{
+display:flex;
+justify-content:center;
+align-items: center;
+padding-top:2em;
+text-align: center;
+}
+
+.home{
+    color:white;
+    font-weight:300;
+}
+
+.hometitle{
+    margin:0;
+    font-size:4em;
+    color:white;
+    font-family:'Overpass', sans-serif;
+    font-weight:600;
+}
+
+.home-buttons{
+    display:flex;
+    justify-content: center;
+    gap:2em;
+    padding-top:2.5em;
+}
+
+.trans{
+    background:transparent;
+    border:2px solid;
+    color:white;
+}
+
+.dropdownarrow{
+    margin-left:0.5em;
+}
+
+/* Section two */
+
+.future{
+    font-size:2.5em;
+    text-align: center;
+    margin-top:3em;
+    color:hsl(208, 49%, 24%);
+}
+
+.parawrapper{
+    padding:10em 20em;
+    max-width:70em;
+    color:hsl(208, 49%, 24%);
+    font-family:'Ubuntu', sans-serif;
+    font-weight:500;
+}
+
+.para2{
+    margin-top:5em;
+}
+
+.designed-for-the-future{
+    min-height:60em;
+
+}
+
+.illustrator{
+    position:absolute;
+    right:-20em;
+}
+
+/* Section three */
+
+
+
+.phone-section{
+    min-height:25em;
+    max-height:25em;
+    background-color:hsl(237, 17%, 21%);
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding:0 10em;
+    border-bottom-left-radius:100px;
+    border-top-right-radius:100px;
+    background-image:url('./images/bg-pattern-circles.svg');
+    background-repeat: no-repeat;
+    background-position: -14vw -55vh;
+   
+}
+
+.phone-text{
+    max-width:35em;
+    font-family:'Ubuntu', sans-serif;
+    color:white;
+}
+
+.phone-text h1{
+    font-size:2.5em;
+}
+
+/* section 3 */
+
+.parawrapper2{
+    display: flexbox;
+    justify-content:end;
+    padding:17em 12em 0 55em;
+    max-width:100em;
+    color:hsl(208, 49%, 24%);
+    font-family:'Ubuntu', sans-serif;
+    font-weight:500;
+}
+
+.laptop-section{
+    min-height:60em;
+}
+
+.laptop{
+    position: absolute;
+    top:2200px;
+    left:-200px;
+}
+
+.footer{
+    display:flex;
+    justify-content:space-evenly;
+    text-align:left;
+    min-height:20em;
+    background-color:hsl(240, 10%, 16%);
+    border-top-right-radius:100px;
+    padding:5em 5em;
+    color:white;
+}
+
+
+#ddprod{
+    position: relative;
+    left:0em;
+    top:1em;
+    width:50px;
+    display:none;
+}
+
+#ddprod.active{
+    display:block;
+    padding:0;
+}
+
+#ddcompany{
+    position: relative;
+    left:-2.5em;
+    top:1em;
+    width:50px;
+    display:none;
+}
+
+#ddcompany.active{
+    display:block;
+}
+
+#ddcontact{
+    position: relative;
+    left:-2.5em;
+    top:1em;
+    width:50px;
+    display:none;
+}
+
+#ddcontact.active{
+    float: inline-start;
+    display:block;
+}
+
+#toggle-button{
+    position: absolute;
+    top:3.5em;
+    right:3.5rem;
+    display:none;
+    flex-direction:column;
+    justify-content: space-between;
+    width:31px;
+    height:25px;
+}
+
+#toggle-button .bar{
+    height:5px;
+    width:100%;
+    background-color: white;
+    border-radius:10px;
+}
+
+@media (max-width:870px) {
+    #toggle-button{
+        display:flex;
+    }
+
+    #main-link{
+        display:none;
+    }
+
+    #main-linkc{
+        display:none;
+    }
+
+    #main-linkct{
+        display:none;
+    }
+
+    .login{
+        display:none;
+    }
+
+    .nav-items{
+        display:flex;
+        flex-direction: column;
+    }
+
+    .dropdownarrow{
+        display:none;
+    }
+
+    #ddcontact{
+        position: relative;
+        left:-6em;
+        top:2em;
+    }
+
+    #ddcompany{
+        position: relative;
+        left:-6.6em;
+        top:2em;
+    }
+
+    #ddprod{
+        position: relative;
+        left:-3.5em;
+        top:2em;
+    }
+
+    #main-link.active{
+        display:flex;
+    }
+
+    #main-linkc.active{
+        display:flex;
+    }
+
+    #main-linkct.active{
+        display:flex;
+    }
+
+    }
+
+    @media (max-width:1300px){
+        .illustrator{
+            position: relative;
+            width:600px;
+        }
+
+        .parawrapper{
+            padding:7em 20em;
+        }
+
+.phone-section{
+    min-height:40em;
+    display:flex;
+    justify-content:flex-end;
+    flex-direction:column;
+    align-items: center;
+}
+
+.phone-text{
+    padding:5em 0em;
+}
+
+.parawrapper{
+    margin-bottom:180px;
+}
+
+.phones{
+    position:relative;
+    top:0em;
+}
+
+.laptop{
+    position: relative;
+    width:600px;
+    display:block;
+}
+
+.laptop-section{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.parawrapper2{
+    display:block;
+    justify-content: center;
+    flex-direction: column;
+    padding:5em 15em;
+}
+    }
+
